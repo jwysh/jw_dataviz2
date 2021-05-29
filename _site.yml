@@ -1,7 +1,7 @@
-name: "jw_dataviz"
+name: "Joyce's DataViz Blog"
 title: "DataViz"
 description: |
-  DataViz
+  For Joyce to upload DataViz assignments
 output_dir: "_site"
 navbar:
   right:
