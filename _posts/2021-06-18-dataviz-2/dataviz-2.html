@@ -86,635 +86,39 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>DataViz</title>
+  <title>DataViz 2</title>
+
+  <meta property="description" itemprop="description" content="A short description of the post."/>
 
 
-
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2021-06-18"/>
+  <meta property="article:created" itemprop="dateCreated" content="2021-06-18"/>
+  <meta name="article:author" content="Joyce WOON Shi Hui"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="DataViz"/>
+  <meta property="og:title" content="DataViz 2"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="A short description of the post."/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="DataViz"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="DataViz"/>
+  <meta property="twitter:title" content="DataViz 2"/>
+  <meta property="twitter:description" content="A short description of the post."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["DataViz"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["DataViz 2"]},{"type":"character","attributes":{},"value":["A short description of the post.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Joyce WOON Shi Hui"]},{"type":"character","attributes":{},"value":["https://www.linkedin.com/in/joycewoonsh/"]}]}]},{"type":"character","attributes":{},"value":["06-18-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["dataviz-2_files/anchor-4.2.2/anchor.min.js","dataviz-2_files/bowser-1.9.3/bowser.min.js","dataviz-2_files/distill-2.2.21/template.v2.js","dataviz-2_files/header-attrs-2.8/header-attrs.js","dataviz-2_files/jquery-1.11.3/jquery.min.js","dataviz-2_files/popper-2.6.0/popper.min.js","dataviz-2_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-2_files/tippy-6.2.7/tippy-light-border.css","dataviz-2_files/tippy-6.2.7/tippy.css","dataviz-2_files/tippy-6.2.7/tippy.umd.min.js","dataviz-2_files/webcomponents-2.0.0/webcomponents.js","img/4.1.1.1.3.png","img/4.1.3.3.png","img/4.2.2.1.png","img/4.2.2.2.png","img/4.2.2.3.png","img/4.2.2.4.png","img/4.2.3.11.png","img/4.2.3.4.png","img/4.2.3.7.png","img/4.2.3.9.png","img/4.2.4.5.png","img/4.2.4.6.png","img/4.2.5.4.png","img/4.3.1.7.png","img/4.4.3.2.png","img/4.4.3.3.png","img/alternative.PNG","img/interactive.PNG","img/statictable.PNG","img/suggestion.PNG","img/tooltip.PNG","img/tooltipcircleEX.PNG","img/tooltipcircleIM.PNG","img/tooltiplineEX.PNG","img/tooltiplineIM.PNG"]}
+  </script>
   <!--radix_placeholder_navigation_in_header-->
-  <meta name="distill:offset" content=""/>
-
-  <script type="application/javascript">
-
-    window.headroom_prevent_pin = false;
-
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        tolerance: 5,
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
-  </script>
-
-  <style type="text/css">
-
-  /* Theme (user-documented overrideables for nav appearance) */
-
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #0F2E3D;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: white;
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  .distill-site-header {
-
-  }
-
-  .distill-site-footer {
-
-  }
-
-
-  /* Site Header */
-
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-
-
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-
-  .distill-site-header .title {
-    font-size: 18px;
-    min-width: 150px;
-  }
-
-  .distill-site-header .logo {
-    padding: 0;
-  }
-
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-
-
-
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-
-
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-dropdown-active {
-    display: block;
-  }
-
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative; min-height: 500px; }
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* Site Footer */
-
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  /* Headroom */
-
-  d-title {
-    padding-top: 6rem;
-  }
-
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-
-  .headroom--unpinned {
-    top: -100px;
-  }
-
-  .headroom--pinned {
-    top: 0;
-  }
-
-  /* adjust viewport for navbar height */
-  /* helps vertically center bootstrap (non-distill) content */
-  .min-vh-100 {
-    min-height: calc(100vh - 100px) !important;
-  }
-
-  </style>
-
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
-  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
-  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
-
-  <script type="application/javascript">
-
-  function getMeta(metaName) {
-    var metas = document.getElementsByTagName('meta');
-    for (let i = 0; i < metas.length; i++) {
-      if (metas[i].getAttribute('name') === metaName) {
-        return metas[i].getAttribute('content');
-      }
-    }
-    return '';
-  }
-
-  function offsetURL(url) {
-    var offset = getMeta('distill:offset');
-    return offset ? offset + '/' + url : url;
-  }
-
-  function createFuseIndex() {
-
-    // create fuse index
-    var options = {
-      keys: [
-        { name: 'title', weight: 20 },
-        { name: 'categories', weight: 15 },
-        { name: 'description', weight: 10 },
-        { name: 'contents', weight: 5 },
-      ],
-      ignoreLocation: true,
-      threshold: 0
-    };
-    var fuse = new window.Fuse([], options);
-
-    // fetch the main search.json
-    return fetch(offsetURL('search.json'))
-      .then(function(response) {
-        if (response.status == 200) {
-          return response.json().then(function(json) {
-            // index main articles
-            json.articles.forEach(function(article) {
-              fuse.add(article);
-            });
-            // download collections and index their articles
-            return Promise.all(json.collections.map(function(collection) {
-              return fetch(offsetURL(collection)).then(function(response) {
-                if (response.status === 200) {
-                  return response.json().then(function(articles) {
-                    articles.forEach(function(article) {
-                      fuse.add(article);
-                    });
-                  })
-                } else {
-                  return Promise.reject(
-                    new Error('Unexpected status from search index request: ' +
-                              response.status)
-                  );
-                }
-              });
-            })).then(function() {
-              return fuse;
-            });
-          });
-
-        } else {
-          return Promise.reject(
-            new Error('Unexpected status from search index request: ' +
-                        response.status)
-          );
-        }
-      });
-  }
-
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-
-    // get search element (bail if we don't have one)
-    var searchEl = window.document.getElementById('distill-search');
-    if (!searchEl)
-      return;
-
-    createFuseIndex()
-      .then(function(fuse) {
-
-        // make search box visible
-        searchEl.classList.remove('hidden');
-
-        // initialize autocomplete
-        var options = {
-          autoselect: true,
-          hint: false,
-          minLength: 2,
-        };
-        window.autocomplete(searchEl, options, [{
-          source: function(query, callback) {
-            const searchOptions = {
-              isCaseSensitive: false,
-              shouldSort: true,
-              minMatchCharLength: 2,
-              limit: 10,
-            };
-            var results = fuse.search(query, searchOptions);
-            callback(results
-              .map(function(result) { return result.item; })
-            );
-          },
-          templates: {
-            suggestion: function(suggestion) {
-              var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
-                ? `<img src="${offsetURL(suggestion.preview)}"</img>`
-                : '';
-              var html = `
-                <div class="search-item">
-                  <h3>${suggestion.title}</h3>
-                  <div class="search-item-description">
-                    ${suggestion.description || ''}
-                  </div>
-                  <div class="search-item-preview">
-                    ${img}
-                  </div>
-                </div>
-              `;
-              return html;
-            }
-          }
-        }]).on('autocomplete:selected', function(event, suggestion) {
-          window.location.href = offsetURL(suggestion.path);
-        });
-        // remove inline display style on autocompleter (we want to
-        // manage responsive display via css)
-        $('.algolia-autocomplete').css("display", "");
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-
-  });
-
-  </script>
-
-  <style type="text/css">
-
-  .nav-search {
-    font-size: x-small;
-  }
-
-  /* Algolioa Autocomplete */
-
-  .algolia-autocomplete {
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: sub;
-    background-color: white;
-    color: black;
-    padding: 6px;
-    padding-top: 8px;
-    padding-bottom: 0;
-    border-radius: 6px;
-    border: 1px #0F2E3D solid;
-    width: 180px;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-nav .algolia-autocomplete {
-      display: none;
-      visibility: hidden;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete {
-      display: inline-block;
-      visibility: visible;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
-      margin-left: 0;
-      width: 400px;
-      max-height: 400px;
-    }
-  }
-
-  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
-    width: 90%;
-    outline: none;
-    border: none;
-  }
-
-  .algolia-autocomplete .aa-hint {
-    color: #999;
-  }
-  .algolia-autocomplete .aa-dropdown-menu {
-    width: 550px;
-    max-height: 70vh;
-    overflow-x: visible;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 3px;
-    margin-left: -150px;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #999;
-    border-top: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-    cursor: pointer;
-    padding: 5px 4px;
-    border-bottom: 1px solid #eee;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
-    border-bottom: none;
-    margin-bottom: 2px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
-    overflow: hidden;
-    font-size: 0.8em;
-    line-height: 1.4em;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
-    font-size: 1rem;
-    margin-block-start: 0;
-    margin-block-end: 5px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
-    display: inline-block;
-    overflow: hidden;
-    height: 2.8em;
-    width: 80%;
-    margin-right: 4%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
-    display: inline-block;
-    width: 15%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
-    height: 3em;
-    width: auto;
-    display: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
-    display: initial;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-    background-color: #eee;
-  }
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  </style>
-
-
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -2030,232 +1434,468 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.8/header-attrs.js"></script>
-  <script src="site_libs/popper-2.6.0/popper.min.js"></script>
-  <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
-  <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
-  <script src="site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
-  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="dataviz-2_files/header-attrs-2.8/header-attrs.js"></script>
+  <script src="dataviz-2_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="dataviz-2_files/popper-2.6.0/popper.min.js"></script>
+  <link href="dataviz-2_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="dataviz-2_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="dataviz-2_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="dataviz-2_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="dataviz-2_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="dataviz-2_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="dataviz-2_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
   <!--/radix_placeholder_site_in_header-->
 
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"DataViz","authors":[]}
+{"title":"DataViz 2","description":"A short description of the post.","authors":[{"author":"Joyce WOON Shi Hui","authorURL":"https://www.linkedin.com/in/joycewoonsh/","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-06-18T00:00:00.000+08:00","citationText":"Hui, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a href="index.html" class="title">DataViz</a>
-<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
-</div>
-<div class="nav-right">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).load(function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-apply-limit l-page">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="DataViz">DataViz</h1>
-<a href="posts/2021-06-18-dataviz-2/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">June 18, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Joyce WOON Shi Hui</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>DataViz 2</h2>
-<div class="dt-tags"></div>
-<p>A short description of the post.</p>
-</div>
-</a>
-<a href="posts/welcome/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">May 27, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Joyce WOON Shi Hui</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>DataViz 1</h2>
-<div class="dt-tags"></div>
-<p>DataViz 1 Makeover</p>
-</div>
-</a>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>DataViz</h1>
+<h1>DataViz 2</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>A short description of the post.</p></p>
 </div>
 
+<div class="d-byline">
+  Joyce WOON Shi Hui <a href="https://www.linkedin.com/in/joycewoonsh/" class="uri">https://www.linkedin.com/in/joycewoonsh/</a> 
+  
+<br/>06-18-2021
+</div>
 
 <div class="d-article">
+<h1 id="critique-of-visualisation">1.0 Critique of Visualisation</h1>
+<p>The original visualisation can be seen below as reference:</p>
+<p><img src="img/OG.png" /></p>
+<h3 id="critique-of-clarity">1.1 Critique of Clarity</h3>
+<p><strong>1. Hidden details</strong></p>
+<p>Due to the circles being opaque and bad placement of the labels, some details are unclear. The centre point of the bubble will help viewers distinguish between “Net Importers” and “Net Exporters” however, in some cases, this centre point is hidden. E.g. Taiwan’s centre point was covered by United States’ label while Malaysia, EU and Republic of Korea have their centre point covered by other circles. As such, it is unclear where the centre point falls.</p>
+<p><strong>2. Not hidden but still unclear details</strong></p>
+<p>Furthermore, Japan’s centre point falls between Exports and Imports. Unsure if Japan is a net exporter or importer.</p>
+<p><strong>3. Lack of title and other explanatory text</strong></p>
+<p>There is no title to the graph, so viewers are unsure what this graph is supposed to be for.</p>
+<p>There is also a lack of dates, thus viewers are unsure which period this graph is about. The tooltip talks about dates like 2009 and 2006 but we are unsure of how did this tooltip come about from the graph.</p>
+<p>Furthermore, there is no explanation on which markets the EU consists of, especially since Brexit, this might need to be clarified. There are also 2 entries from Republic of Korea in the data (one is Democratic), clarification about which was used should be written.</p>
+<h3 id="critique-of-aesthetics">1.2 Critique of Aesthetics</h3>
+<p><strong>Colours</strong></p>
+<p>While Net Importer and Net Exporter colours were good as they are both mild on the eyes and distinguishable from each other, there is just way too many colours on the graph which makes it hard to focus on the details. Furthermore, some colours were indistinguishable from each other, e.g. Thailand and EU have purple-blue tones and it is not easy to tell them apart. Japan is yellow and yellow font on white background is not a good idea. Further more, dotted yellow lines tend to become invisible. EU’s colour contrasts too strongly with Malaysia’s colour, this causes distress to the eyes and a reddish outline due to the visual illusion this causes (chromostereopsis).</p>
+<p><strong>Hidden Tooltips</strong></p>
+<p>Due to the circles being opaque, some labels are partially hidden (e.g. Malaysia and Indonesia)</p>
+<p><strong>Use of icons and ambiguous location of axis labels</strong></p>
+<p>There is not much of a point to add the icons to Exports and Imports since we can already tell from the text. Plus it confuses the viewers’ eyes since Exports is above Imports which could possibly confuse viewers at first glance, since net exporters are technically below net importers on the graph.</p>
+<h1 id="suggest-alternative-graphical-presentation">2.0 Suggest Alternative Graphical Presentation</h1>
+<p>The plan is to create a dashboard with an interactive graph that allows switching the graph through the years by the use of a dropdown list. The goal is to clearly answer the following:</p>
+<ol type="1">
+<li><p>Which market had higher trade with Singapore during the period?</p></li>
+<li><p>Was the market a net importer or exporter with Singapore?</p></li>
+<li><p>What was the proportion of exports vs imports?</p></li>
+</ol>
+<p>Also, a static table will be placed in the dashboard so that viewers who want answers on market rankings in terms of total trade volume across the years can get their answers as fast as possible without the interactive graph.</p>
+<p>The graph and the table are meant to complement each other in the sense that the graph will give more details to the table.</p>
+<p><img src="img/suggestion.PNG" /></p>
+<p>The dashboard will have the following:</p>
+<ul>
+<li>One interactive graph for Export, Import and Average for the markets across the periods</li>
+<li>One static table for rankings of markets based on total trade volume with Singapore</li>
+</ul>
+<p>To note, the tooltip for the interactive graph will contain the following information for the respective periods:</p>
+<ul>
+<li>Total trade</li>
+<li>Net trade</li>
+<li>Whether the market is a net importer or exporter</li>
+<li>Total exports</li>
+<li>Total imports</li>
+<li>Export-import ratio</li>
+</ul>
+<h3 id="improvement-to-clarity">2.1 Improvement to Clarity</h3>
+<ol type="1">
+<li>Titles and subtitles to explain graphs more clearly.</li>
+<li>Tooltips show more relevant information. See previous section for said information.</li>
+<li>Imports and Exports will be on the same axis to easily compare them.</li>
+<li>Dates will clearly be shown.</li>
+<li>Clarification on ambiguous markets like EU and Republic of Korea will be given.</li>
+<li>Tooltips will only appear when hovering over specific portions of the interactive graph, which allows viewers to see the graph properly before reading the tooltip.</li>
+<li>There is no opague overlap between markets and they are clearly segmented.</li>
+<li>Net importers and exporters will be clearly coloured to distinguish between them.</li>
+</ol>
+<h3 id="improvement-to-aesthetic">2.2 Improvement to Aesthetic</h3>
+<ol type="1">
+<li>There will not be any opague elements that will overlap with other elements so everything will be shown clearly. Other than tooltips which will only appear when hovered over.</li>
+<li>Only 3 colours will be present in the graph to avoid confusing viewers. Black, pink and green.</li>
+<li>Removal of unneeded visuals like icons that do not add to the value of the visual.</li>
+</ol>
+<h1 id="alternative-graphical-presentation">3.0 Alternative Graphical Presentation</h1>
+<p><img src="img/alternative.PNG" /></p>
+<p>Please view the interactive dashboard on Tableau Public <a href="https://public.tableau.com/app/profile/joyce.woon/viz/DataViz2_16240401638120/Dashboard1">here</a>.</p>
+<p>For a preview of the individual graph, table and tooltips, please refer to 6.0 Appendix.</p>
+<h1 id="data-visualisation-preparation">4.0 Data Visualisation Preparation</h1>
+<h3 id="data-source">4.1 Data Source</h3>
+<h5 id="creating-the-tables">4.1.1 Creating the tables</h5>
+<ol type="1">
+<li>Open the excel file in Tableau.</li>
+<li>Check “Use Data Interpreter” in Data Source.</li>
+<li>Under data source, drag T1 and T2 into the white space as such and edit their relationship so that Variables = Variables (T2)</li>
+</ol>
+<p><img src="img/4.1.1.1.3.png" /></p>
+<h5 id="preparing-the-table">4.1.2 Preparing the table</h5>
+<ol type="1">
+<li>Select all the date columns of T1, right click on the column and click Pivot. Repeat for T2.</li>
+<li>Right click and delete the following columns:</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Table</th>
+<th style="text-align: center;">Column</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">T1</td>
+<td style="text-align: center;">Variables - Split 2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">T2</td>
+<td style="text-align: center;">Variables (T2) - Split 2</td>
+</tr>
+</tbody>
+</table>
+<ol start="3" type="1">
+<li>Right click Pivot Field Values in T1 and click Create Calculated Field. Rename the calculated field to Values (Import) and enter the following calculation before clicking OK:</li>
+</ol>
+<blockquote>
+<p>IF [Variables - Split 1] = ‘European Union’</p>
+<p>THEN [Pivot Field Values]*1000</p>
+<p>ELSE [Pivot Field Values]</p>
+<p>END</p>
+</blockquote>
+<ol start="4" type="1">
+<li>Right click Pivot Field Values in T2 and click Create Calculated Field. Rename the calculated field to Values (Export) and enter the following calculation before clicking OK:</li>
+</ol>
+<blockquote>
+<p>IF [Variables (T2) - Split 1] = ‘European Union’</p>
+<p>THEN [Pivot Field Values (Pivot1)]*1000</p>
+<p>ELSE [Pivot Field Values (Pivot1)]</p>
+<p>END</p>
+</blockquote>
+<blockquote>
+<p>Steps 3 and 4 need to be done as European Union were in Millions while the rest of the markets were in Thousands.</p>
+</blockquote>
+<ol start="5" type="1">
+<li>Right click on the respective columns and rename as follows:</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Table</th>
+<th style="text-align: center;">Original Name</th>
+<th style="text-align: center;">New Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">T1</td>
+<td style="text-align: center;">Pivot Field Names</td>
+<td style="text-align: center;">Dates</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">T1</td>
+<td style="text-align: center;">Variables - Split 1</td>
+<td style="text-align: center;">Markets</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>The reason why we do not rename the rest of the columns is because we are not using them during the course of this visualisation.</p>
+</blockquote>
+<ol start="6" type="1">
+<li>Click on the Abc on the Dates column in T1 and click Date. Repeat the same for Pivot Field Names (T2) in T2.</li>
+</ol>
+<h5 id="adding-filters">4.1.3 Adding filters</h5>
+<ol type="1">
+<li>On the top right of Data Source under Filters, click add.</li>
+<li>Under Edit Data Source Filters, click add…. Select Dates, click OK, select $ Years, click Next, check 2011 to 2020 and press OK. Repeat for Pivot Field Names (Pivot 1) in T2.</li>
+<li>Under Edit Data Source Filters, click add…. Select Markets (Export), click OK, select Malaysia, Mainland China, European Union, United States, Taiwan, Japan, Republic of Korea, Indonesia, Thailand and Hong Kong and press OK. Repeat for Variables (T2) – Split 1 in T2.</li>
+</ol>
+<p>By the end of this step, Edit Data Source Filters should look like this.</p>
+<p><img src="img/4.1.3.3.png" /></p>
+<h3 id="interactive-graph">4.2 Interactive Graph</h3>
+<h5 id="creating-calculated-fields">4.2.1 Creating Calculated Fields</h5>
+<ol type="1">
+<li>Click Sheet 1.</li>
+<li>On the left panel, there is a black triangle. Click the black triangle, click Create Calculated Field and create the following fields:</li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 66%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field Name</th>
+<th>Formula</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Total</td>
+<td>[Values (Export)]+[Values (Import)]</td>
+<td>Dates</td>
+</tr>
+<tr class="even">
+<td>T1</td>
+<td>([Values (Export)]+[Values (Import)])/2</td>
+<td>Markets</td>
+</tr>
+<tr class="odd">
+<td>Net</td>
+<td>[Values (Export)]-[Values (Import)]</td>
+<td>For other fields</td>
+</tr>
+<tr class="even">
+<td>High</td>
+<td>IF [Values (Export)]&gt;[Values (Import)] THEN [Values (Export)] ELSE [Values (Import)] END</td>
+<td>For graph</td>
+</tr>
+<tr class="odd">
+<td>Low</td>
+<td>IF [Values (Export)]&lt;[Values (Import)] THEN [Values (Export)] ELSE [Values (Import)] END</td>
+<td>For graph</td>
+</tr>
+<tr class="even">
+<td>Trade Type</td>
+<td>IF SUM([Net])&gt;0 THEN ‘Net Exporter’ ELSE ‘Net Importer’ END</td>
+<td>For colour and tooltip</td>
+</tr>
+<tr class="odd">
+<td>Ratio</td>
+<td>[Values (Export)]/[Values (Import)]</td>
+<td>For tooltip</td>
+</tr>
+<tr class="even">
+<td>Exporter</td>
+<td>IF [Trader Type]=‘Net Exporter’ THEN [Trader Type] END</td>
+<td>For tooltip</td>
+</tr>
+<tr class="odd">
+<td>Importer</td>
+<td>IF [Trader Type]=‘Net Importer’ THEN [Trader Type] END</td>
+<td>For tooltip</td>
+</tr>
+<tr class="even">
+<td>High-Export</td>
+<td>IF [Trader Type]=‘Net Exporter’ THEN sum([High]) END</td>
+<td>For tooltip</td>
+</tr>
+<tr class="odd">
+<td>High-Import</td>
+<td>IF [Trader Type]=‘Net Importer’ THEN sum([High]) END</td>
+<td>For tooltip</td>
+</tr>
+<tr class="even">
+<td>Low-Export</td>
+<td>IF [Trader Type]=‘Net Importer’ THEN sum([Low]) END</td>
+<td>For tooltip</td>
+</tr>
+<tr class="odd">
+<td>Low-Import</td>
+<td>IF [Trader Type]=‘Net Exporter’ THEN sum([Low]) END</td>
+<td>For tooltip</td>
+</tr>
+<tr class="even">
+<td>Exporter-Text</td>
+<td>IF [Trader Type]=‘Net Exporter’ THEN ‘exports are higher than imports’ END</td>
+<td>For tooltip</td>
+</tr>
+<tr class="odd">
+<td>Importer-Text</td>
+<td>IF [Trader Type]=‘Net Importer’ THEN ‘imports are higher than exports’ END</td>
+<td>For tooltip</td>
+</tr>
+<tr class="even">
+<td>Exporter-Net</td>
+<td>IF SUM([Net])&gt;0 THEN SUM([Net]) END</td>
+<td>For tooltip</td>
+</tr>
+<tr class="odd">
+<td>Importer-Net</td>
+<td>IF SUM([Net])&lt;0 THEN SUM([Net]) END</td>
+<td>For tooltip</td>
+</tr>
+<tr class="even">
+<td>Rank</td>
+<td>RANK_DENSE(sum([Total]),‘desc’)</td>
+<td>For static table (later)</td>
+</tr>
+</tbody>
+</table>
+<h5 id="creating-the-graph">4.2.2 Creating the Graph</h5>
+<ol type="1">
+<li>Drag Average to Columns and Markets to Rows. The graph should look like this:</li>
+</ol>
+<p><img src="img/4.2.2.1.png" /></p>
+<ol start="2" type="1">
+<li>Drag High and Low to the top of the graph. The graph should look like this:</li>
+</ol>
+<p><img src="img/4.2.2.2.png" /></p>
+<ol start="3" type="1">
+<li>Under Markets, Measure Values, click on the dropdown list that says Automatic and change to Line. The graph should look like this.</li>
+</ol>
+<p><img src="img/4.2.2.3.png" /></p>
+<ol start="4" type="1">
+<li>Under Markets, Measure Values, drag Measure Names, which is currently under Colour, to Path. The graph should look like this:</li>
+</ol>
+<p><img src="img/4.2.2.4.png" /></p>
+<h5 id="formatting-filters-and-colours">4.2.3 Formatting Filters and Colours</h5>
+<ol type="1">
+<li>Drag Dates into Filters, click Years and click Next. Under Filter [Year of Dates] select Use all instead of Select from list and click OK.</li>
+<li>Under Filters, hover over Year(Dates) and click Show Filter.</li>
+<li>On the right side, Year(Dates) will appear. Hover over it, click the black triangle and click Single Value (List).</li>
+<li>Under Marks, All, drag Trader Type to Colour. The graph should look like this:</li>
+</ol>
+<p><img src="img/4.2.3.4.png" /></p>
+<ol start="5" type="1">
+<li>Right click Value on the graph and click Edit Axis. Under General, Axis Title, leave the Title empty. Under Tick Marks, Major Tick Marks, click None. Close the window.</li>
+<li>Right click Average on the graph and click Edit Axis. Under Axis Title, rename the Title to Export, Import and Average Values (SGD) and close the window.</li>
+<li>Hover over AGG(Trader Type), click the black triangle and Edit Colours. Choose the following colours:</li>
+</ol>
+<p><img src="img/4.2.3.7.png" /></p>
+<ol start="8" type="1">
+<li>Hover over AGG(Trader Type), click on the black triangle and Edit Title. Rename the title to Market Trade Type.</li>
+</ol>
+<h5 id="formatting-title-and-tooltips">4.2.3 Formatting Title and Tooltips</h5>
+<ol type="1">
+<li>Go back to Sheet 1.</li>
+<li>Change the title to “International Trade with Singapore, <Page Name>”.</li>
+<li>Drag the following to the respective Marks under Tooltips:</li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 88%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Fields/Columns</th>
+<th>Marks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SUM(Total), AGG(Exporter), AGG(Importer), AVG(Ratio), AGG(High-Export), AGG(High-Import), AGG(Low-Export), AGG(Low-Import), AGG(Exporter-Net), AGG(Importer-Net)</td>
+<td>SUM(Average)</td>
+</tr>
+<tr class="even">
+<td>AGG(High-Import), AGG(Low-Export), AGG(Low-Import), AGG(Exporter-Net), AGG(Importer-Net), ATTR(Markets), AGG(Importer-Text), AGG(Exporter-Text)</td>
+<td>Measure Values</td>
+</tr>
+</tbody>
+</table>
+<p>Drag Total, Net, Values (Import), Values (Export), Ratio, Exporter and Importer to Tooltip, under Marks, All.</p>
+<ol start="4" type="1">
+<li>Hover over SUM(Ratio) under Marks, SUM(Average), click the white triangle, hover over measure and click Average.</li>
+<li>Click Tooltip under Marks, SUM(Average) and, before clicking OK, edit the field to the following:</li>
+</ol>
+<p><img src="img/4.2.4.5.png" /></p>
+<ol start="6" type="1">
+<li>Click Tooltip under Mark, Measure Values and, before clicking OK, edit the field to the following:</li>
+</ol>
+<p><img src="img/4.2.4.6.png" /></p>
+<ol start="7" type="1">
+<li>Right click the respective marks, click Format and format as follows:</li>
+</ol>
+<blockquote>
+<p>Under Pane, Default. Click the dropdown list for Numbers, choose Number (Custom), change display units to Billions, and prefix with “SGD “.</p>
+<p>The marks to be formatted with the same step above is as follows:</p>
+<p>SUM(Total), SUM(Average), AGG(High-Export), AGG(High-Import), AGG(Low-Export), AGG(Low-Import), AGG(Exporter-Net), AGG(Importer-Net)</p>
+<p>Make sure all the tooltips above for both SUM(Average) and Measure Values are formatted accordingly.</p>
+</blockquote>
+<h5 id="adding-animation">4.2.4 Adding Animation</h5>
+<ol type="1">
+<li>Under Format, click Animations.</li>
+<li>Turn Workbook Default to On, Duration 0.50 seconds.</li>
+<li>Drag Year(Dates) from Filter to Pages.</li>
+<li>Click Title and edit as follows:</li>
+</ol>
+<p><img src="img/4.2.5.4.png" /></p>
+<h3 id="static-table">4.3 Static Table</h3>
+<h5 id="creating-static-table">4.3.1 Creating Static Table</h5>
+<ol type="1">
+<li>Create new sheet and go to Sheet 3.</li>
+<li>Drag Year(Dates) into Columns, Markets into Rows, Rank into Text, under Marks, Trader Type into Colour, under Marks and Total into Detail, under Marks.</li>
+<li>Click Show Me and make sure it is a table.</li>
+<li>Hover over Rank, under Marks, click the white triangle, hover over Computer using, click Table (Down).</li>
+<li>Hover over Markets on the table, click the black triangle, hover over Field, click SUM(Total) and sort the Markets from highest SUM(Total) to lowest.</li>
+<li>Under Marks, click Text and the … Edit the text to font size 12 and bold.</li>
+<li>Double click the title and edit it as follows:</li>
+</ol>
+<p><img src="img/4.3.1.7.png" /></p>
+<ol start="8" type="1">
+<li>Under Marks, click Tooltip and leave the Tooltip blank.</li>
+<li>Under Analytics, click and drag totals to Row Grand Totals.</li>
+<li>Right click Grand Total in the table and click format. Under Header, Grand Totals, rename Label to Overall.</li>
+</ol>
+<h3 id="dashboard">4.4 Dashboard</h3>
+<h5 id="adding-in-interactive-graph">4.4.1 Adding in Interactive Graph</h5>
+<ol type="1">
+<li>Create new Dashboard and Drag Sheet 1 into the white space.</li>
+<li>Hover over filter, click the black triangle and ensure it is Single Value (Dropdown) if it is not yet that.</li>
+<li>Click on the Interactive Graph on the Dashboard. On the top, there is a dropdown list that reads Automatic. Click it and choose Entire View.</li>
+</ol>
+<h5 id="adding-in-static-table">4.4.2 Adding in Static Table</h5>
+<ol type="1">
+<li>Drag Sheet 3 below Sheet 1 on the Dashboard</li>
+<li>Click on the Static Table on the Dashboard. On the top, there is a dropdown list that reads Automatic. Click it and choose Entire View.</li>
+</ol>
+<h5 id="adding-in-text-boxes-and-other-formatting">4.4.3 Adding in Text Boxes and Other Formatting</h5>
+<ol type="1">
+<li>On the bottom left of the screen, check Show dashboard title and edit the title as follows:</li>
+</ol>
+<p><img src="img/4.4.3.2.png" /></p>
+<ol start="2" type="1">
+<li>Drag a Text box below Market Trade Type and edit the text to the following:</li>
+</ol>
+<p><img src="img/4.4.3.3.png" /></p>
+<ol start="3" type="1">
+<li>Under Size, change Dashboard size to 1000x1000 and adjust the heights of the various elements to fit into the Dashboard.</li>
+</ol>
+<h1 id="derived-insights">5.0 Derived Insights</h1>
+<ol type="1">
+<li><p>Export/Import: Hong Kong has the largest Export/Import ratio with exports being approximately as high as Malaysia (rank 2 in total trade). However, due to low imports, ranking in Total Trade is low.</p></li>
+<li><p>Net Exporter/Importer: Most countries do not change from Net Exporter to Net Importer or vice versa throughout the years. The only markets that experienced changes were Mainland China, Malaysia and Republic of Korea.</p></li>
+<li><p>Total Trade: Unlike the above, markets do change in ranking in terms of total trade with Singapore. The only markets that do not exhibit change are Mainland China and Malaysia with the top 2 ranks and Thailand with the last rank.The markets that exhibit change were EU and US, which changed between ranks 4 and 5, Indonesia, Hong Kong, Taiwan, Japan and Republic of Korea are more volatile and changed between ranks 6 to 9.</p></li>
+</ol>
+<h1 id="appendix">6.0 Appendix</h1>
+<p><strong>Interactive Graph</strong></p>
+<p><img src="img/interactive.PNG" /></p>
+<p><strong>Static Table</strong></p>
+<p><img src="img/statictable.PNG" /></p>
+<p><strong>Tooltip Graph</strong></p>
+<p><img src="img/tooltip.PNG" /></p>
+<p><strong>Tooltip (For middle circle, Net Exporter)</strong></p>
+<p><img src="img/tooltipcircleEX.PNG" /></p>
+<p><strong>Tooltip (For middle circle, Net Importer)</strong></p>
+<p><img src="img/tooltipcircleIM.PNG" /></p>
+<p><strong>Tooltip (For lines, Net Exporter)</strong></p>
+<p><img src="img/tooltiplineEX.PNG" /></p>
+<p><strong>Tooltip (For lines, Net Importer)</strong></p>
+<p><img src="img/tooltiplineIM.PNG" /></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
